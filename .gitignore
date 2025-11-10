@@ -1,27 +1,42 @@
 # Python
 *.pyc
-__pycache__/
 *.pyo
 *.pyd
+__pycache__/
 *.swp
-*.sqlite3
 
-# Env
+# Django
+*.log
+*.pot
+*.sqlite3
+db.sqlite3
+*.pyc
+*.pyo
+
+# Django migrations
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/__pycache__/
+*/migrations/*.log
+
+# Media and static files
+/media/
+staticfiles/
+
+# Environment
 .env
 venv/
 ENV/
 env/
-
-# Django stuff:
-*.log
-*.pot
-*.pyc
-db.sqlite3
-/staticfiles/
-/media/
 
 # VS Code
 .vscode/
 
 # macOS
 .DS_Store
+
+# Node modules (if you have front-end tooling)
+node_modules/
+
+# Pytest cache
+.pytest_cache/
